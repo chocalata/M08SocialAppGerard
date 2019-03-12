@@ -1,0 +1,30 @@
+crear la clase comment, y ponerle los campos (author comment fecha)
+
+crear una activity PostViewActivity (detalle del post)
+    3partes
+        1. imageview textview y tal para los datos dle post
+
+        2 recyclerview que carge los comentarios
+
+        3 un edittext y un boton para añaidr comentario
+
+1. El postKey lo scas del postFragment como extra
+
+    consultas en firebase los datos dle post
+        /posts/data/$postkey
+
+        addValueEventListener()
+
+3. Añadir comentario:
+    añadir a firebase el comentario
+        /posts/comments/$postKey/$commentKey/{ atuhro: tal, comment: me gusta }
+
+        // el postkey lo sacas del recyclerview del postfragment, como extra
+        // el $commentKey se crea con push()
+
+2. Crear un FirebaseRecyclerAdapter para rellenar el recyclerview
+
+        FirebaseRecyclerOptions options = new FirebaseRecyclerOptions.Builder<Comment>()
+                .setQuery(mReference.child("posts/comment/$postKey"), Comment.class)
+                .setLifecycleOwner(this)
+                .build();

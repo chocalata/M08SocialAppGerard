@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.DetailPostActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="25dp">
+            <ImageView
+                android:id="@+id/detailPostProfileImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_background"/>
+            <TextView
+                android:id="@+id/detailPostProfileUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de ejemplo"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/detailPostText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de ejemplo"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/detailPostAIV"
+            android:layout_marginTop="20dp"
+            android:layout_width="190dp"
+            android:layout_height="250dp"
+            android:src="@drawable/ic_launcher_background"/>
+        <LinearLayout
+            android:id="@+id/detailLikeLayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="start"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/detailLike"
+                app:srcCompat="@drawable/heart_on"
+                android:adjustViewBounds="true"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/detailNumLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:text="8"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvComments"
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+            <EditText
+                android:id="@+id/detailComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Añadir comentario"
+                android:layout_weight="8"/>
+            <ImageButton
+                android:id="@+id/detailSendCommnet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_menu_send"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

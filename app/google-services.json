@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "580812072312",
+    "firebase_url": "https://socialapp-f22dd.firebaseio.com",
+    "project_id": "socialapp-f22dd",
+    "storage_bucket": "socialapp-f22dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580812072312:android:9c4527b3b7b420e1",
+        "android_client_info": {
+          "package_name": "com.example.gerard.socialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580812072312-3mvvb5nk0ja0peiesgff60iuoesi104a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA86ugcSX1pDCj3dSydfstbsvfJldBhjzU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
